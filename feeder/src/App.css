@@ -1,0 +1,471 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;     
+  overflow-x: hidden;
+}   
+:root{
+  --border-color: rgba(0,0,0,0.09);
+  --background-color: rgba(150,150,150,0.09);
+  --container-color: white;
+  --card-bg: white;
+}
+body{
+  width: 100vw;
+  max-height: 2048px;
+  background: var(--background-color);
+}
+
+.search{
+  width: 20%;
+  height: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.09);
+  background:  var(--background-color);
+  border-radius: 2px;
+}
+
+.search > input{
+  border:none;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  padding-left:20px;
+  background:  var(--background-color);
+   
+}
+
+.search > input::placeholder{
+  text-align: center;
+  font-size: 0.8em;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background:  var(--background-color);
+}
+
+
+
+.fnav{
+ width: 100vw;
+ height: 3.9rem;
+ background: var(--container-color);
+ border-bottom: 1px solid var(--border-color); 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.fnav > h3
+{
+    margin-left:20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.fnav > .main-top-btn
+{
+   width: 33%;
+   height: 100%;
+  
+   display: flex;
+   justify-content: initial;
+   align-items: center;
+}
+.fnav img{
+  margin-left:0.99rem;
+}
+.me{
+  border-radius: 50%;
+}
+
+.main-top-btn > img, .tnav-noti >img
+{
+   width: 1.6rem;
+   height:1.6rem;
+}
+
+/*End of Top Bar*/
+
+.site-body-wh{
+   width: 100vw;
+   height: auto;
+   max-height: 1200px;
+   display: flex;
+   justify-content: center;
+   margin-top:3rem;
+  
+}
+
+/*Publication*/
+.publication-area{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3em;
+}
+
+ 
+
+
+/*new user*/
+.new-user-area{
+   width: 30%;
+   height: 70vh;
+   
+   display: flex;
+   flex-direction: column;
+}
+
+.uprofile-name{
+  width: 100%;
+  height: 96px;
+  display: flex;
+}
+
+.me-image-ctx{
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.me-image-ctx > img{
+  width: 75%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.me-info-ctx{
+  width: 78%;
+  height: 100%;
+ 
+  display: grid;
+  align-items: center;
+  justify-content: start;
+}
+.username{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-left:20px;
+  padding-top:20px;
+}
+.realname{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-left:20px;
+  padding-bottom:20px;
+  font-size: 0.9rem;
+  color: #434343;
+}
+
+
+.friend-sug{
+  margin-top:20px;
+  width: 100%;
+  height: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sug-1{
+  color: #343434;
+  padding-left:20px;
+}
+
+.seeall{
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  padding-right:20px;
+}
+
+.sug-ctx{
+  width: 100%;
+  height: 64px;
+  
+  display: flex;
+
+}
+
+.sprima{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.s-img-ctx{
+  margin-left:20px;
+  margin-right: 10px;
+}
+.s-img-ctx > img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.s-info{
+  display: flex;
+  flex-direction: column;
+}
+.s-n-name, .s-r-name{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s-r-name{
+  font-size: 0.9em;
+  font-weight: lighter;
+  color:#433443;
+}
+
+.fw-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fw-btn> b{
+   color: rgb(3, 102, 194);
+   cursor: pointer;
+}
+
+/*Status Bard*/
+.status-bar{
+  width: 100%;
+  height: 180px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--card-bg);  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left:20px;
+}
+/*css-tricks.com/gradient-borders-in-css*/
+.single-status-post{
+  max-width: 64px;
+  max-width: 64px;
+  padding: 1rem;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.module{
+  width:48px;
+  height:48px;
+  border-radius: 50%;
+  background: #222;
+  color:white;
+  padding:1rem;
+}
+
+
+
+/*End of Status Bar*/
+
+
+/*publication*/
+
+.publication-card{
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-top: 32px;
+  background-color: var(--card-bg);
+}
+
+.card-header{
+  width: 100%;
+  height: 16%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pright{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding-left: 1.1rem;
+}
+.pright > p{
+  margin-left:20px;
+  cursor: pointer;
+}
+.pleft{
+  cursor: pointer;
+}
+.card-header .profile-image-ctx{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/*img on publication*/
+.publication-card > img{
+  width: 100%;
+  height: 60%;
+}
+
+/*comment, like share*/
+.reaction-box{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.reaction-buttons{
+  padding-left:20px;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.share-reaction{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reaction-buttons > img
+{
+  margin-left:4px;
+  margin-right: 4px;
+}
+.reaction-buttons > img, .share-reaction > img{
+  width:24px;
+  height: 24px;
+}
+
+.spacer{
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+}
+
+
+@media screen and (max-width:640px)
+{
+  .search{
+    display: none;
+    visibility: hidden;
+  }
+  .main-top-btn{
+    margin-right: 30px;
+    justify-content: initial;
+  }
+  .tnav-noti {
+    width: 3.5rem;
+    
+  }
+  .me{
+    
+    border-radius: 50%;
+    width: 32px;
+    height: 10px;
+  }
+  .new-user-area{
+    display: none;
+    visibility: hidden;
+  }
+  .publication-area{
+    width: 90% ;
+    display: flex;
+    justify-content: center;
+    margin:0;
+  }
+  .publication-card{
+     
+  }
+  
+}
+
+
+
+/*
+  Login and Maybe Registry
+*/
+.lg-body{
+
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+}
+
+.lg-box{
+  width: 30%;
+  height: 70%;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.lg-title{
+  margin-top:2rem;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2.8em;
+  text-align: center;
+}
+
+.lg-textbox{
+   width: 100%;
+   height: 10%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.lg-textbox:nth-child(2){
+   margin-top:2.5em;
+}
+
+.lg-textbox > input{
+  border: 1px solid var(--border-color);
+  padding: 10px 10px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+.line{
+  width: 32%;
+  height: 1px;
+  border: 1px solid rgba(0,0,0,0.59)
+}
+.line:nth-child(1){
+  margin-right: 25px;
+}
+.line:nth-child(3){
+  margin-left: 25px;
+}
+
+.lg-textbox > kbd{
+  cursor: pointer;
+  font-weight: bolder;
+  color:white;
+  background-color: #434343;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
